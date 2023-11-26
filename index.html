@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego MiQuiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+   <!-- El núcleo de JS SDK Firebase siempre es necesario y debe ser enlistado primero -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+<!-- TODO: Agregar SDKs para los productos Firebase que quieras usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Configuración Firebase de tu aplicación web
+  const firebaseConfig = {
+  apiKey: "AIzaSyCqZ4G4AMwpJCjJu238GPSLpI75aNoSNic",
+  authDomain: "miquiz-f07e4.firebaseapp.com",
+  databaseURL: "https://miquiz-f07e4-default-rtdb.firebaseio.com",
+  projectId: "miquiz-f07e4",
+  storageBucket: "miquiz-f07e4.appspot.com",
+  messagingSenderId: "475855551412",
+  appId: "1:475855551412:web:b74b42be189d131973d0e1"
+};
+  // Inicializar Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="js/Contestant.js"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
